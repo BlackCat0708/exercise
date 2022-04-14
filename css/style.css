@@ -16,6 +16,7 @@
 body{
   font-family: 'PT Serif', serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 .top-button{
@@ -30,7 +31,7 @@ body{
   bottom: 15px;
   right: 20px;
   background-color: var(--lightCoffee);
-  z-index: 3;
+  z-index: 2;
 }
 
 .top-button:hover{
@@ -117,7 +118,7 @@ input[type="checkbox"]{
   position: fixed;
   top: 0;
   left: -270px;
-  z-index: 2;
+  z-index: 3;
 }
 
 #menu i{
@@ -387,7 +388,6 @@ input#toggle_menu:checked+#menu{
 #location .card{
   background-color: rgba(255, 255, 255, 0.9);
   width: 85%;
-  height: 375px;
   padding: 75px 0%;
   text-align: center;
   display: flex;
@@ -400,7 +400,7 @@ input#toggle_menu:checked+#menu{
   font-size: 38px;
   letter-spacing: 5.5px;
   color: var(--midBlack);
-  margin: 15px 0;
+  line-height: 73px;
 }
 
 #location .card h2{
@@ -420,6 +420,7 @@ input#toggle_menu:checked+#menu{
   width: 100%;
   margin-top: -50px;
   position: relative;
+  overflow: hidden;
 }
 
 #news .container{
@@ -659,7 +660,7 @@ input#toggle_menu:checked+#menu{
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  right: 39%;
+  right: 38.5%;
   top: 88%;
   background: var(--lightCoffee);
   z-index: 10;
@@ -679,7 +680,7 @@ color: white;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  left: 41%;
+  left: 38.5%;
   top: 88%;
   background: var(--lightCoffee);
   z-index: 10;
@@ -1499,6 +1500,7 @@ color: white;
 
   #news{
     margin-top: -50px;
+    margin-bottom: 50px;
     position: relative;
   }
   
@@ -1613,9 +1615,9 @@ color: white;
   }
 
   #parallax .swiper-slide {
-    padding: 163px 400px 200px 1030px;
     text-align: left;
     position: relative;
+    padding: 100px 50px 300px 50%;
   }
   
   #parallax .swiper-slide .circle {
@@ -1623,7 +1625,7 @@ color: white;
     height: 240px;
     position: absolute;
     top: 170px;
-    right: 920px;
+    right: 55%;
   }
 
   #parallax .swiper-slide .text {
